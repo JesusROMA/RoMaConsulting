@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoMa Consulting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">RoMa Consulting</div>
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Impulsamos tu negocio al siguiente nivel con soluciones integrales</h1>
+                <p>Diseño y desarrollo web, herramientas personalizadas como ERP's, correos corporativos, análisis de datos, dashboards, además de ingeniería de procesos para maximizar la eficiencia de tu negocio.</p>
+                <a href="#about-us" class="cta-button">Sobre Nosotros</a>
+            </div>
+            <div class="hero-image">
+                <img src="imgs/hero-image.png" alt="Equipo trabajando en soluciones integrales">
+            </div>
+        </section>
+        <section id="services" class="services-section">
+            <div class="container">
+              <div class="service">
+                <div class="icon">
+                  <img src="imgs/img1.svg" alt="Desarrollo de Páginas Web">
+                </div>
+                <h3>Desarrollo de Páginas Web</h3>
+                <p>Creemos sitios web atractivos y funcionales adaptados a las necesidades de tu negocio, priorizando diseño, experiencia de usuario y escalabilidad.</p>
+              </div>
+              <div class="service">
+                <div class="icon">
+                  <img src="imgs/img2.svg" alt="Implementación de Correos Corporativos">
+                </div>
+                <h3>Implementación de Correos Corporativos</h3>
+                <p>Configura tu identidad profesional con correos personalizados que fortalezcan la imagen de tu marca.</p>
+              </div>
+              <div class="service">
+                <div class="icon">
+                  <img src="imgs/img3.svg" alt="Aplicaciones a Medida y ERP's">
+                </div>
+                <h3>Aplicaciones a Medida y ERP's</h3>
+                <p>Diseñamos aplicaciones personalizadas y ofrecemos implementación de sistemas ERP para optimizar la administración de tu negocio.</p>
+              </div>
+              <div class="service">
+                <div class="icon">
+                  <img src="imgs/img4.svg" alt="Analítica de Datos y Dashboards">
+                </div>
+                <h3>Analítica de Datos y Dashboards</h3>
+                <p>Transformamos datos en información útil mediante análisis y dashboards intuitivos que te permiten tomar decisiones informadas.</p>
+              </div>
+              <div class="service">
+                <div class="icon">
+                  <img src="imgs/img5.svg" alt="Ingeniería de Procesos">
+                </div>
+                <h3>Ingeniería de Procesos</h3>
+                <p>Diagramas de flujo y optimización de procesos para aumentar la eficiencia y productividad de tu negocio.</p>
+              </div>
+            </div>
+            <section id="about-us" class="about-us-section">
+                <div class="about-us-container">
+                  <div class="about-us-image">
+                    <img src="imgs/sobre-nosotros.png" alt="Sobre nosotros">
+                  </div>
+                  <div class="about-us-text">
+                    <h2>Sobre nosotros</h2>
+                    <p>
+                      En <strong>RoMa Consulting</strong>, somos apasionados por transformar ideas en soluciones digitales efectivas. Nos especializamos en brindar servicios integrales que ayudan a nuestros clientes a optimizar sus procesos, fortalecer su presencia en línea y alcanzar sus objetivos de negocio.
+                    </p>
+                    <p>
+                      Nuestro equipo está formado por expertos en desarrollo web, análisis de datos, marketing digital e ingeniería de procesos. Combinamos creatividad, innovación y tecnología para ofrecer soluciones personalizadas que se ajusten a las necesidades específicas de cada cliente.
+                    </p>
+                    <p>
+                      En <strong>RoMa Consulting</strong>, no solo construimos proyectos, creamos alianzas para el éxito.
+                    </p>
+                    <a href="#contact" class="cta-button">Contáctanos</a>
+                  </div>
+                </div>
+              </section> 
+                <section id="contact" class="contact-section">
+                    <div class="contact-container">
+                        <div class="contact-text">
+                            <h2>Contacto</h2>
+                            <p>Compártenos tu experiencia o contáctanos para más información sobre nuestros servicios.</p>
+                        </div>
+                        <div class="contact-form">
+                          <form id="contactForm" action="https://formspree.io/f/xnnnwdqk" method="POST">
+                                <div class="form-group">
+                                    <label for="name">Nombre *</label>
+                                    <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Correo electrónico *</label>
+                                    <input type="email" id="email" name="email" placeholder="Tu email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="service">Selecciona el servicio que te interesa *</label>
+                                    <select id="service" name="service" required>
+                                        <option value="">Selecciona un servicio</option>
+                                        <option value="diseño-web">Diseño Web</option>
+                                        <option value="correos">Correos Corporativos</option>
+                                        <option value="erp">Aplicaciones a Medida/Implementación de ERP</option>
+                                        <option value="analiticas">Análitica de Datos</option>
+                                        <option value="procesos">Ingeniería de Procesos</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Mensaje *</label>
+                                    <textarea id="message" name="message" placeholder="Escribe tu mensaje" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="submit-button">Enviar</button>
+                            </form>
+                        </div>
+                    </div>   
+                  </section>                              
+    </main> 
+    <script src="contact.js"></script> 
+    <footer id="footer">
+      <p>&copy; 2025 Todos los derechos reservados. Diseño por RoMa Consulting.</p>
+  </footer>    
+</body>
+</html>
+

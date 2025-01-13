@@ -1,0 +1,417 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Importación de fuentes desde la carpeta local */
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fdf7f7;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar Styles */
+.navbar {
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 2rem; /* Aumentamos el padding superior para compensar el navbar fijo */
+    gap: 3rem;
+    margin-top: 4rem; /* Espaciado para evitar que el contenido se superponga con el navbar */
+}
+
+.hero-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #2c2c2c;
+}
+
+.hero-text p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background-color: #ff5f5f;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e14e4e;
+}
+
+/* Hero Image */
+.hero-image {
+    max-width: 50%;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 90%;
+        margin-bottom: 2rem;
+    }
+
+    .hero-image {
+        max-width: 90%;
+    }
+}
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('fonts/Poppins-Bold.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Poppins-Regular';
+    src: url('fonts/Poppins-Regular.ttf') format('truetype');
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Poppins-Regular', sans-serif;
+  }
+  
+  .services-section {
+    padding: 80px 40px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .service {
+    flex: 1 1 calc(33.33% - 30px);
+    max-width: 350px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    background: #fff;
+    transition: transform 0.3s ease;
+  }
+  
+  .service:hover {
+    transform: scale(1.05);
+  }
+  
+  .service .icon {
+    margin-bottom: 20px;
+  }
+  
+  .service .icon img {
+    width: 80px;
+    height: auto;
+  }
+  
+  .service h3 {
+    font-family: 'Poppins-Bold', sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .service p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  @font-face {
+    font-family: 'Poppins-Bold';
+    src: url('fonts/Poppins-Bold.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Poppins-Regular';
+    src: url('fonts/Poppins-Regular.ttf') format('truetype');
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Poppins-Regular', sans-serif;
+  }
+  
+  .about-us-section {
+    padding: 200px 80px; /* Sección más amplia */
+    background-color: #fff;
+  }
+  
+  .about-us-container {
+    display: flex;
+    align-items: center;
+    max-width: 2100px; /* Ampliado el ancho máximo */
+    margin: 0 auto;
+    gap: 100px; /* Más separación entre imagen y texto */
+  }
+  
+  .about-us-image {
+    flex: 1 1 50%;
+  }
+  
+  .about-us-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .about-us-text {
+    flex: 1 1 50%;
+    text-align: left;
+  }
+  
+  .about-us-text h2 {
+    font-family: 'Poppins-Bold', sans-serif;
+    font-size: 2.8rem; /* Título más grande */
+    color: #333;
+    margin-bottom: 30px; /* Más separación del texto */
+  }
+  
+  .about-us-text p {
+    font-size: 1.4rem; /* Texto más grande */
+    line-height: 2; /* Espaciado entre líneas más amplio */
+    color: #666;
+    margin-bottom: 25px; /* Mayor separación entre párrafos */
+  }
+  
+  /* Diseño responsivo */
+  @media (max-width: 768px) {
+    .about-us-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-us-image,
+    .about-us-text {
+      flex: 1 1 100%;
+    }
+  
+    .about-us-text {
+      text-align: center;
+    }
+  }
+  /* Estilos generales */
+.contact-section {
+    padding: 100px 60px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.contact-text {
+    flex: 1 1 40%;
+}
+
+.contact-text h2 {
+    font-family: 'Poppins-Bold', sans-serif;
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-text p {
+    font-family: 'Poppins-Regular', sans-serif;
+    font-size: 1.4rem;
+    color: #666;
+    line-height: 2;
+}
+
+.contact-form {
+    flex: 1 1 60%;
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+    margin-bottom: 35px;
+}
+
+.contact-form label {
+    font-family: 'Poppins-Regular', sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px 15px;
+    font-family: 'Poppins-Regular', sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border-color: #ff5e57;
+    outline: none;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form .submit-button {
+    display: inline-block;
+    padding: 12px 30px;
+    font-family: 'Poppins-Bold', sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #ff5e57;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form .submit-button:hover {
+    background-color: #e04c45;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-text {
+        margin-bottom: 30px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+}
+/* Asegúrate de que las fuentes estén cargadas correctamente desde la carpeta 'fonts' */
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url('fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url('fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+/* Estilos del footer */
+#footer {
+  background-color: #fff;
+  color: #000;
+  font-family: 'Poppins-Regular', sans-serif;
+  text-align: center;
+  padding: 50px;
+  font-size: 20px;
+}
+
+#footer p {
+  margin: 0;
+}
+
+#footer p span {
+  font-family: 'Poppins-Bold', sans-serif;
+}
+
+  
+  
+
+  
+
